@@ -2,9 +2,16 @@ MIT License
 
 Copyleft (c) 2026 Techviator
 
-**Disclaimer**: Cloudflare, Telegram, ZeptoMail, Postmark, Resend, MailChannels, Ntfy, and any other brand names, product names, or service marks mentioned in this repository are the trademarks, registered trademarks, or service marks of their respective owners. This project is not affiliated with, endorsed by, or sponsored by Cloudflare, Inc. or any other aforementioned entities. 
+**Disclaimer**: Cloudflare, Telegram, ZeptoMail, Postmark, Resend, MailChannels, Ntfy, 
+and any other brand names, product names, or service marks mentioned in this repository 
+are the trademarks, registered trademarks, or service marks of their respective owners. 
+This project is not affiliated with, endorsed by, or sponsored by Cloudflare, Inc. 
+or any other aforementioned entities. 
 
-Additionally, portions of this code and documentation may have been generated or assisted by Artificial Intelligence (AI). Users are strongly cautioned to thoroughly review, test, and audit all code and configurations for security, accuracy, and suitability before deploying to any production or sensitive environment.
+Additionally, portions of this code and documentation may have been generated 
+or assisted by Artificial Intelligence (AI). Users are strongly cautioned to thoroughly review, 
+test, and audit all code and configurations for security, accuracy, and suitability before 
+deploying to any production or sensitive environment.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
