@@ -1,0 +1,30 @@
+# Secrets and Variables
+.env
+*.env
+.env.*
+.dev.vars
+
+# Cloudflare Wrangler Data
+.wrangler/
+
+# IDE and Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Mac / System
+.DS_Store
+.HARDLINKED
+
+# Build and Output
+dist/
+build/
+*.log
+
+# Ansible Legacy
+*.retry

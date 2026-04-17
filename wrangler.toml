@@ -1,0 +1,47 @@
+name = "cf-usage-watcher"
+main = "src/index.js"
+compatibility_date = "2026-04-01"
+
+[observability]
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[[kv_namespaces]]
+binding = "USAGE_STATE"
+id = "#REPLACE WITH YOURS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "usage-watcher"
+database_id = "#REPLACE WITH YOURS"
+
+[triggers]
+crons = ["*/10 * * * *"]
+
+[vars]
+NOTIFY_VIA_EMAIL = "true"
+EMAIL_PROVIDER = "resend" # "resend", "mailchannels", "postmark", "zeptomail"
+ALERT_TO_EMAIL = "your-email@example.com"
+EMAIL_FROM_ADDRESS = "alerts@example.com"
+EMAIL_FROM_NAME = "Usage Watcher"
+
+ENABLE_PUBLIC_DASHBOARD = "true"
+ENABLE_CLOUDFLARE_ACCESS = "true"
+
+NOTIFY_VIA_PUSH = "false"
+PUSH_PROVIDER = "telegram" # "telegram" or "ntfy"
+TELEGRAM_CHAT_ID = ""
+NTFY_TOPIC_URL = "" # e.g. "https://ntfy.sh/my_secret_topic"
+CF_ACCESS_JWK_URL = "https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/certs"
+TIME_ZONE = "America/Chicago"
+
+# Required bindings / secrets / vars:
+# CF_API_TOKEN
+# CF_ACCOUNT_ID
+# EMAIL_API_KEY
+# TELEGRAM_BOT_TOKEN
+# NTFY_AUTH_TOKEN
+# CF_ACCESS_AUDIENCE
+# DB (D1 binding)
+# TIME_ZONE
