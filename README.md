@@ -1,5 +1,9 @@
 # Cloudflare Usage Watcher
 
+## This tool may no longer be needed 
+Cloudflare is launching Billing Budget Alerts: 
+https://developers.cloudflare.com/billing/manage/budget-alerts/
+
 Cloudflare Worker that checks account-wide usage every 10 minutes, alerts at 50%, 75%, and 90%, features a 15% velocity breaker to catch rapid spikes, uses KV for the breaker flag, and stores run history in D1 for the root dashboard.
 
 ## What it watches
